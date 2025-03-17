@@ -4,7 +4,10 @@ public class LiquidContainer : Container, IHazardNotifier
 {
     public LiquidContainer(double maxPayload, string productType) : base(maxPayload, productType) { }
 
-    public override string GetContainerType() => "L";  // "L" for Liquid
+    public override string GetContainerType()
+    {
+        return "L";
+    }  
 
     public void SendHazardNotification(string message, string containerNumber)
     {
