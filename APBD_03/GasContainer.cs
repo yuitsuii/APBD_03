@@ -22,9 +22,9 @@ public class GasContainer : Container, IHazardNotifier
     }
 
 
-    public void SendHazardNotification(string message, string comtainerNumber)
+    public void SendHazardNotification(string message, string containerNumber)
     {
-        Console.WriteLine($"[Hazard Notification] Container{comtainerNumber}:{message}");
+        Console.WriteLine($"[Hazard Notification] Container{containerNumber}:{message}");
     }
     
     public override void LoadContainer(double cargoWeight)

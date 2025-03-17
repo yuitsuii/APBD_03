@@ -55,6 +55,10 @@ public abstract class Container
         Console.WriteLine("Loaded container successfully. Current load: " + CurrentLoad);
     }
     
+    public void DisplayContainerInfo()
+    {
+        Console.WriteLine($"Container {SerialNumber} - Type: {GetContainerType()} - Current Load: {CurrentLoad} kg - Max Payload: {MaxPayload} kg");
+    }
     
  }
     
